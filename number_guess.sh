@@ -6,3 +6,5 @@ RANDOM_NUMBER=$(( $RANDOM % (MAX - MIN + 1) + MIN ))
 
 echo -e "\nEnter your username:"
     read USERNAME
+
+echo "Welcome, $USERNAME! It looks like this is your first time here."
