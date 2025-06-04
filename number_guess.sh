@@ -26,8 +26,10 @@ do
   elif [[ $USER_GUESS -gt $RANDOM_NUMBER ]]
   then
     echo "It's lower than that, guess again:"
-  else
+  elif [[ $USER_GUESS == $RANDOM_NUMBER ]]
+  then
     echo "You guessed it in $NUMBER_OF_GUESSES tries. The secret number was $RANDOM_NUMBER. Nice Job!"
+    # store the number of guesses if its best game and increment number of games played
   fi
 done
 
