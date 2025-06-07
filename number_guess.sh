@@ -8,6 +8,7 @@ USER_GUESS=0
 
 # Uncomment the next line to debug with a fixed number
 # RANDOM_NUMBER=3
+
 echo "Enter your username:"
 read USERNAME
 
@@ -29,6 +30,7 @@ fi
 
 echo "Guess the secret number between 1 and 1000:"
 
+# Main game loop
 while [[ $USER_GUESS -ne $RANDOM_NUMBER ]]
 do
   read USER_GUESS
